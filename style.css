@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+	
+	
+  }
+      
+		nav {
+		    background-color: #044604;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+		}
+        ul{
+            list-style-type: none;
+        }
+		
+		.logo {
+			margin-right: auto;
+		}
+		
+		.logo img {
+			height: 50px;
+			vertical-align: middle;
+		}
+		
+		.nav-links {
+			display: flex;
+			align-items: center;
+		}
+		
+		.nav-links li {
+			margin: 0 10px;
+		}
+		
+		.nav-links a {
+			color: #fff;
+			text-decoration: none;
+			padding: 5px 10px;
+			display: inline-block;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+            
+		}
+		
+		.nav-links a:hover {
+			background-color: black;
+		}
+
+		/*Global*/
+		
+        .container{
+            width: 80%;
+			margin: auto;
+			overflow: hidden;
+        }
+
+		/*Home page*/
+		#home {
+			min-height: 600px;
+			background: url('images/shelf.png') no-repeat 0;
+			width: 100%;
+			text-align: center;
+			color: #fff;
+
+		}
+		#home p{
+			padding-top: 200px;
+			text-align: center;
+			font-weight: bolder;
+			
+		}
+		#about h1{
+			text-align: center;
+			font-weight: bold;
+			margin: 30px;
+			padding: 7px;
+		}
+		.sct-1{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.sct-2{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.sct-2 img{
+			margin-right: 60px;
+		}
+		.sct-2 h2{
+			text-align: left;
+		}
+		.sct-3{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.sct-3 h2{
+			text-align: left;
+		}
+        #contact{
+			background-color: #065f06;
+			color: #fff;
+			text-align: justify;
+			margin-top: 20px;
+		}
+		#contact h2, p{
+			padding: 8px;
+		}
+
+		/* Footer*/
+		footer{
+			background-color: #044604;
+			color: #fff;
+			text-align: center;
+		}
+		/*Media Queries*/
+		/* For screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+
+	/* Adjust the font size and padding for the nav links */
+	.nav-links a {
+	  font-size: 14px;
+	  padding: 5px 8px;
+	}
+	.sct-1{
+		display: block;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+	.sct-2{
+		display: block;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+	.sct-3{
+		display: block;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+
+
+
+
+  }
+  
+  /* For screens with a maximum width of 500px */
+  @media screen and (max-width: 368px) {
+  
+	/* Adjust the font size and padding for the nav links */
+	.nav-links a {
+	  font-size: 12px;
+	  padding: 5px 6px;
+	}
+
+	
+
+	
+  
+	/* Adjust the logo height */
+	.logo img {
+	  height: 40px;
+	}
+  
+	/* Adjust the padding for the home section */
+	#home p {
+	  padding-top: 150px;
+	}
+
+	.sct-1{
+		display: block;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+	.sct-2{
+		display: block;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+	.sct-3{
+		display: block;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+  
+	/* Adjust the font size and padding for the about section */
+	.sct-1 p {
+	  font-size: 16px;
+	  padding: 20px 10px;
+	}
+  
+	/* Adjust the font size and padding for the about section heading */
+	.sct-1 h1 {
+	  font-size: 28px;
+	  padding-top: 20px;
+	}
+  
+	/* Adjust the font size and padding for the about section text */
+	.sct-2 p {
+	  font-size: 16px;
+	  padding: 20px 10px;
+	}
+  
+	/* Adjust the font size and padding for the about section heading */
+	.sct-2 h2 {
+	  font-size: 28px;
+	  padding-top: 20px;
+	}
+  
+	/* Adjust the font size and padding for the contact section */
+	#contact h2 {
+	  font-size: 28px;
+	  padding-top: 20px;
+	}
+  }
+		
